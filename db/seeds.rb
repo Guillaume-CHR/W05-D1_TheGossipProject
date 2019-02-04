@@ -13,7 +13,7 @@ Bundler.require
 end
 
 10.times do
-	User.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, description: Faker::GreekPhilosophers.quote, email: Faker::Internet.email, city_id: City.all.sample.id)
+	User.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, description: Faker::GreekPhilosophers.quote, email: Faker::Internet.email, city_id: City.all.sample.id, age: rand(8..50))
 end
 
 10.times do

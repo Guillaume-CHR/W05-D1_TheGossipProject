@@ -5,5 +5,6 @@ FactoryBot.define do
     description {"My description is empty ... sorry, not sorry" }
     email { "lauren.olivier@gmail.com" }
     city {City.create(name: "Toulouse", zip_code: "31100")}
+    age { 32 }
   end
 end

@@ -10,24 +10,22 @@
     </div>
 
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      	<h1 class="display-4">The Gossip Project - Gossip n° <%= @gossipx.id =%> </h1>
+      	<h1 class="display-4">The Gossip Project - User n° <%= @userx.id =%> </h1>
     </div>
 	
 	<div class="container">
     	<div class="card p-3 text-center">
 	        <div class="card mb-4 shadow-sm">
 	          	<div class="card-header">
-		            <h4 class="my-0 font-weight-normal">Title: <strong><%= @gossipx.title %></strong></h4>
+		            <h4 class="my-0 font-weight-normal">Full Name: <strong><%= @userx.first_name + ' ' + @userx.last_name.upcase %></strong></h4>
 		        </div>
 		        <div class="card-body">
 		           	<ul class="list-unstyled mt-3 mb-4">
-		           		<li class="text-left"> <h7>Creation Date: <%= @gossipx.created_at %></h7></li>
-		           		<br/>
-		              	<li class="text-justify"><%= @gossipx.content %></li>
-		              	<br/>
-	
-		              	<li class="text-right"> <h6>Author: <%= User.find(@gossipx.user_id).first_name + ' ' + User.find(@gossipx.user_id).last_name.upcase%></h6></li>
-		              	<li class="text-right"> <h6> <%= link_to "Visit Profile", controller: "dynamic_pages", action: "user", id: @gossipx.user_id %></h6></li>
+		              	<li>Description: <%= @userx.description %></li>
+		              	<li>Mailto: <%= @userx.email %></li>
+		              	<li>City: <%= City.find(@userx.city_id).name %></li>
+		              	<li>Zip_code: <%= City.find(@userx.city_id).zip_code %></li>
+		              	<li>Age:  <%= @userx.age %></li>
 		            </ul>
 	          	</div>
 	        </div>

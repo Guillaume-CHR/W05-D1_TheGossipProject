@@ -8,4 +8,7 @@ class DynamicPagesController < ApplicationController
   	@text = params[:welcome]
   end
 
+  def user
+  	@userx = User.find(params[:id])
+  end
 end
