@@ -1,24 +1,35 @@
-# README
+# README -- The Gossip Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Welcome to the repository of the project 'The Gossip Project'.
+** This project has been done by:
+##### Selmen M'HAMDI -> @SelmenM
+##### Guillaume CHRISTE -> @guillaumeCHR
 
-Things you may want to cover:
+In here, you'll be able to consult/edit/add/delete gossips posted by you or others.
+NB: for now, only consult of gossips & authors is available.
 
-* Ruby version
+From the main page, access the follow:
+<ul>
+	<li>Main Page: localhost:3000/</li>
+	<li>Gossip Page: localhost:3000/gossip/0</li>
+	<li>Author Page: localhost:3000/author/0</li>
+	<li>Team: localhost:3000/team</li>
+	<li>Contact: localhost:3000/contact</li>
+	<li>Welcome: localhost:3000/welcome/yourmessage</li>
+</ul>
 
-* System dependencies
+To launch to program, do as follow:
+~~~~~~~~~~~~~~~~~~~~
+$ bundle install
 
-* Configuration
+$ rails db:create
 
-* Database creation
+$ rails db:migrate
 
-* Database initialization
+$ rails db:seed
 
-* How to run the test suite
+$ rails server
+~~~~~~~~~~~~~~~~~~~~
+<3
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
