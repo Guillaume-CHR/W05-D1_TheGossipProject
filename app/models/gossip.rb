@@ -4,4 +4,7 @@ class Gossip < ApplicationRecord
 	has_many :tags, through: :join_gossip_tags
 	has_many :likes, as: :likeable
 	has_many :comments, as: :commentable
+
+	validates :title, presence: true
+	validates :content, presence: true
 end

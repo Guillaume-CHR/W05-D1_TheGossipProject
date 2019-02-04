@@ -1,5 +1,5 @@
 FactoryBot.define do
   factory :tag do
-    title { "MyString" }
+    title { "MyTag" }
   end
 end
