@@ -4,10 +4,11 @@
       	<p class="lead">Dear visitor, welcome to our secret page. Go through, our gossips.</p>
     </div>
 	
-	<% (Gossip.all).each_with_index do |gossip, index| %>
-    	<div class="container">
-	    	<div class="card p-3 text-center">
-		        <div class="card mb-4 shadow-sm">
+	
+	<div class="container ">
+    	<div class="card p-3 text-center d-inline-block">
+	    	<% (Gossip.all).each_with_index do |gossip, index| %>
+		        <div class="card mb-1 pb-4 shadow-sm d-inline-block" style="width: 350px;">
 		          	<div class="card-header">
 		            	<h4 class="my-0 font-weight-normal">Gossip <%= gossip.id %>: <strong><%= gossip.title %></strong></h4>
 		          	</div>
@@ -24,8 +25,7 @@
 		            	</button>
 		          	</div>
 		        </div>
-	    	</div>
+		    <% end %>
     	</div>
-    	<br/>
-	<% end %>
+	</div>	
 </body>
